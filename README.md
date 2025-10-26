@@ -20,9 +20,9 @@ python3 water_jugs.py --caps <capacities> --start <start_amounts> --goal-jug <in
 ```python
 from water_jugs import solve_water_jugs, goal_exact_amount_in_jug
 
-caps = (<int1>, <int2>, <int3>,...)
-start = (<int1>, <int2>, <int3>,...)
-goal = goal_exact_amount_in_jug(<index>, <goal>)
+caps = (<capacities>)
+start = (<start_amounts>)
+goal = goal_exact_amount_in_jug(<index>, <liters>)
 
 paths = solve_water_jugs(caps, start, goal)
 print(f"{len(paths)} shortest solutions found!")
@@ -54,4 +54,5 @@ Solution 1:
   pour 10L → 4L (4): (10:6, 7:5, 4:0) → (10:2, 7:5, 4:4)
   pour 4L → 7L (2): (10:2, 7:5, 4:4) → (10:2, 7:7, 4:2)
 ```
+
 
